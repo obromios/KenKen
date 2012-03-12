@@ -53,6 +53,15 @@ box_nos{9} = [8,12];
 % box_nos{16} = [31,32];
 % box_nos{17} = [36];
 
+% solution is
+% 
+% 654321
+% 261543
+% 413652
+% 345216
+% 532164
+% 126435
+
 print_puzzle(dim,ops,results,box_nos);
 
 for i = 1:no_regions
