@@ -5,7 +5,7 @@ solution to the KenKen puzzle. This works relatively quickly for puzzles up to 4
   
 Further work could be to add heuristics to prune search, add a user interface, or convert from Matlab to another language.
 
-All functions are provided under MIT licence, except for the ones written by Bruon Luong, which are provided under BSD licence.
+All functions are provided under MIT licence, except for the ones written by Bruno Luong, which are provided under BSD licence.
 
 Feel free to contribute or use this repository. 
 
