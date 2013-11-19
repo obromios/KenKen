@@ -1,46 +1,13 @@
-This is a repository for the KenKen project, or the early stages of it.
+This is a repository of matlab functions to explore open source approached to solving KenKen puzzles.
 
 At this point in time the program does an exhaustive search to find a 
-solution to the KenKen puzzle. This works for puzzles up to 4 and maybe 5
-dimensions but breaks down after that  Further developments 
-could be to add heuristics to prune search or to add a user interface.
+solution to the KenKen puzzle. This works relatively quickly for puzzles up to 4x4 starts to take too long for puzzles large than this.
+  
+Further work could be to add heuristics to prune search, add a user interface, or convert from Matlab to another language.
 
-For the user interface, one challenge is to work out if squares are
-contiguous.  
+All functions are provided under MIT licence, except for the ones written by Bruon Luong, which are provided under BSD licence.
 
-An algorithm I have been considering is to set up an object
-
-Class block
-   i % column index
-   j % row end
-   % other attributes such as setting the borders to be on or off.
-end
-
-Clearly you can tell if one block is adjacent to another by working out if
-it is plus or minus i or j and has the same j or i.
-
-To find out if a candidate set of blocks is contiguous you could do as follows
-
-U = all candidate blocks
-C = c1 1st block
-S = U - c_1
-
-While C ^= U
-
-contigyous = true
-If ci is adjacent to any of C
-     S = S - c_i
-     C = C + C_i
-     k=1
-else
-     if k == length (U)
-          congigous = false
-          break
-     end
-     k = k + 1
-     rotate S
-end
+Feel free to contribute or use this repository. 
 
 
-C. R. Drane
-12/3/2012
+Chris
